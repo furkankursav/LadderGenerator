@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class LadderGeneratorTarget : TargetRules
 {
-	public LadderGeneratorTarget(TargetInfo Target) : base(Target)
+	public LadderGeneratorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.Add("LadderGenerator");
+		ExtraModuleNames.AddRange( new string[] { "LadderGenerator" } );
 	}
 }
